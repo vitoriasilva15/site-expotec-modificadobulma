@@ -1,0 +1,323 @@
+/*GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+}
+
+.navbar-menu{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+/* CABEÇALHO */
+
+.logo a img{
+    height: 70px;
+    width: 200px;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+header > navbar-menu{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: rgb(80, 79, 79);
+    transform: scale(1.05)
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display:inline-block;
+    padding: 0 40px;
+
+}
+
+header .btn-cadastro button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(34, 202, 110);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-cadastro button:hover{
+    box-shadow: 0px 0px 8px rgb(25, 214, 25);
+}
+
+
+/*TOPO*/
+
+section.toposite{
+    padding: 40px 4%;
+}
+
+section.toposite .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px
+}
+
+.toposite h1{
+    color: black;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.toposite .txt-topo-site h1 span{
+    color: rgb(171, 59, 199);
+
+}
+
+.toposite .txt-topo-site p{
+    color:black;
+    margin: 40px 0;
+    text-align: justify;
+}
+
+.btn-saibamais button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(195, 132, 211);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-saibamais button:hover{
+    background-color: rgb(170, 117, 219);
+    box-shadow: 0px 0px 8px rgb(198, 100, 243);
+    transform: scale(1.05);
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top:30px;
+    }
+}
+
+.toposite .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    height: 300px;
+    border-radius: 230px;
+}
+
+
+/*SUBEVENTOS*/
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+section.subeventos{
+    padding: 40px 4%;
+}
+
+section.subeventos .flex{
+    gap: 60px;
+}
+
+.subeventos .subeventosbox{
+    color: black;
+    padding: 40px;
+    text-align: justify;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+
+}
+
+.subeventos .subeventosbox:hover{
+    transform:scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.356);
+}
+
+.subeventos .subeventosbox span{
+    font-size: 50px;
+    color:rgb(34, 202, 110);
+}
+
+.subeventos .subeventosbox h3{
+    font-size: 26px;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+
+/*SOBRE*/
+
+.img-sobre img{
+    height:450px;
+    width:450px;
+}
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color:black;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: rgb(34, 202, 110);
+}
+
+.sobre .txt-sobre p{
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-redessociais button{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border:0;
+    background-color: rgb(34, 202, 110);
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin: 10 5px;
+    transition: .2s;
+}
+
+.btn-redessociais button:hover{
+    transform:scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.356);
+}
+
+
+/*PALESTRANTES*/
+
+section.palestrantes{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(162, 110, 211, 0.308);
+}
+
+section.palestrantes .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-palestrantes{
+    width: 260px;
+    height: 360px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-palestrantes:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgba(3, 0, 0, 0.555);
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+
+/*RODAPÉ*/
+
+.logo-footer img{
+    height: 70px;
+    width: 200px;
+}
+
+footer{
+    padding: 40px 4%;
+    background-color: rgb(153, 214, 153);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .btn-redessociais button{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border:0;
+    background-color: rgb(34, 202, 110);
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin: 10 5px;
+    transition: .2s;
+}
